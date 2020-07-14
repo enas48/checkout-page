@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>checkout page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>checkout</h1>
+        </header>
+        <main>
+            <section class="shopping-card">
+                <div class="items">
+                    <div  class="item">
+                        <div class="item-img">
+                            <img src="./images/photo1.png" alt="item1"/>
+                        </div>
+                        <div class="item-info">
+                            <h3>vintage backbag</h3>
+                            <div class="item-price">
+                                 <span class="discount" id="bag-discount">$54,99</span>
+                                 <span class="price" id="bag-price">$94,99</span>
+                             </div>
+                            <div class="counter">
+                                 <button>
+                                    <span class="material-icons">remove</span>
+                                 </button>
+                                  <p id="items-num">1</p> 
+                                 <button>
+                                    <span class="material-icons">add</span>
+                                 </button>
+                            </div>
+                         </div>
+                     </div>
+
+                     <div  class="item">
+                        <div class="item-img">
+                            <img src="./images/photo2.png" alt="item2"/>
+                        </div>
+                        <div class="item-info">
+                            <h3>levi shoes</h3>
+                            <div class="item-price">
+                                 <span class="discount" id="shoes-discount">$74,99</span>
+                                 <span class="price" id="shoes-price">$124,99</span>
+                             </div>
+                            <div  class="counter">
+                                 <button>
+                                    <span class="material-icons">remove</span>
+                                 </button>
+                                  <p id="items-num">1</p> 
+                                 <button>
+                                    <span class="material-icons">add</span>
+                                 </button>
+                            </div>
+                         </div>
+                      </div>    
+                                      
+                 </div>
+
+                <div>
+                    <p>shipping</p>
+                    <span>$19</span>
+                </div>
+                <div>
+                    <p>total</p>
+                    <span id-="total">$148.98</span>
+                </div>
+
+            </section>
+
+            <form>
+                <fieldset>
+                    <legend>Contact information</legend>
+
+                    <div class="input-icons">
+                        <label for="email">e-mail</label>
+                        <span class="material-icons icon">email</span>
+                        <input type="email" placeholder="Enter your email..." required/>
+                     </div>
+                     <div class="input-icons"> 
+                        <span class="material-icons icon">phone</span>
+                         <label for="phone">phone</label>
+                         <input type="text" placeholder="Enter your phone..." required/>
+                     </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Shipping address</legend>
+                    <div class="input-icons"> 
+                        <span class="material-icons icon">account_circle</span>
+                         <label for="fname">full name</label>
+                         <input type="text" value="Rodney cotton" required/>
+                    </div>
+                    <div class="input-icons"> 
+                        <span class="material-icons icon">home</span>
+                         <label for="address">address</label>
+                        <input type="text" placeholder="Your address.." required/>
+                    </div>
+                    <div class="input-icons">
+                        <span class="material-icons icon">location_city</span>
+                         <label for="city">city</label>
+                         <input type="text" placeholder="Your city.." required/>
+                    </div>
+                    <div class="wraper">
+                    <div class="input-icons "> 
+                        <span class="material-icons icon">public</span>
+                         <label for="country" >country</label>
+                         <select name="country" class="country">
+                             <option value="your country" selected>Your country..</option>
+                             <option value="Egypt">Egypt</option>
+                             <option value="korea">korea</option>
+                             <option value="Italy">Italy</option>
+                             <option value="japen">japen</option>
+                        </select>
+                    </div>
+                    <div class="input-icons"> 
+                        <span class="material-icons icon">markunread_mailbox</span>
+                         <label for="postalcode">postal code</label>
+                        <input type="text" class="postal" placeholder="Your postal code.." required/>
+                    </div>
+                </div>
+                <label class="custom-checkbox">
+                    <input type='checkbox'>
+                    <span></span>
+                    <p>save this information for next time</p>
+                  </label>
+                </fieldset>
+
+                <fieldset>
+                    <input type="submit" value="continue" class="submit"/>
+                </fieldset>
+              </form>
+
+        </main>
+        <footer>
+            <p>Your name @DevChallenges.com</p>
+        </footer>
+    </div>
+ 
+
+<script src="./index.js"></script>
+</body>
+</html>
