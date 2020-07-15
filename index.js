@@ -59,14 +59,4 @@ if(updatePrice.classList.contains('levi-shoes')){
 });
 
 
-/*
-let decrement =()=>{
-
-    let number = Number(item.innerHTML);
-    item.innerHTML = number - 1;
-    }
-
-addButton.addEventListener('click',increment)
-
-removeButton.addEventListener('click',decrement)*/
 }
