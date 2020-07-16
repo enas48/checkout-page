@@ -61,5 +61,14 @@ removeButton.forEach(button=>{
     });
 });
 
+let form = document.querySelector('form');
+
+form.addEventListener('submit', performAction);
+function performAction(e) {
+    e.preventDefault();
+    alert('submitted');
+
+}
+
 
 }
